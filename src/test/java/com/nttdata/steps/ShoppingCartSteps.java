@@ -11,6 +11,7 @@ public class ShoppingCartSteps {
 
     public void validateGalleryLoaded() {
         Assert.assertTrue("Visibilidad de la galería de productos correctamente.", productsScreen.isProductDisplayed());
+
     }
 
     public void selectProductByImage(String productName) {
@@ -20,11 +21,15 @@ public class ShoppingCartSteps {
     public void addToCart(int units) {
         for (int i = 0; i < units; i++) {
             cartScreen.clickAddToCartButton();
+
         }
+
     }
+
 
     public void validateCartQuantity(int expectedQuantity) {
         int actualQuantity = cartScreen.getCartItemCount();
+
         Assert.assertEquals("El carrito no muestra la cantidad correcta.", expectedQuantity, actualQuantity);
     }
 }

@@ -21,5 +21,7 @@ public class CartScreen extends PageObject {
         waitFor(ExpectedConditions.visibilityOf(cartCount));
         String cartCountText = cartCount.getText().trim();
         return cartCountText.isEmpty() ? 0 : Integer.parseInt(cartCountText);
+
     }
+
 }

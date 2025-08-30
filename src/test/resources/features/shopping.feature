@@ -8,10 +8,10 @@ Feature: Gestión del carrito de compras en Sauce Labs
     Then valido que el carrito de compras muestre correctamente <UNIDADES> unidades
 
     Examples:
-      | PRODUCTO                   | UNIDADES |
-      | Sauce Labs Backpack        | 1        |
-      | Sauce Labs Bolt - T-Shirt  | 1        |
-      | Sauce Labs Bike Light      | 2        |
+      | PRODUCTO                     | UNIDADES |
+      | Sauce Labs Backpack          | 1        |
+      | Sauce Labs Bolt - T-Shirt    | 1        |
+      | Sauce Labs Bike Light        | 2        |
 
 
 

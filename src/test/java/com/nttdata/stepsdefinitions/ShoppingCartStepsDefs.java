@@ -16,19 +16,25 @@ public class ShoppingCartStepsDefs {
 
     }
 
+
     @Given("valido que carguen correctamente los productos en la galería")
     public void valido_que_carguen_correctamente_los_productos_en_la_galeria() {
         shoppingCartSteps.validateGalleryLoaded();
+
     }
 
     @When("selecciono el producto {string} y agrego {int} al carrito")
     public void selecciono_el_producto_y_agrego_al_carrito(String producto, int unidades) {
         shoppingCartSteps.selectProductByImage(producto);
         shoppingCartSteps.addToCart(unidades);
+
     }
+
 
     @Then("valido que el carrito de compras muestre correctamente {int} unidades")
     public void valido_que_el_carrito_muestre_correctamente_unidades(int unidades) {
         shoppingCartSteps.validateCartQuantity(unidades);
+
     }
+
 }

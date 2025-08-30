@@ -15,12 +15,15 @@ public class ProductsScreen extends PageObject {
     public boolean isProductDisplayed() {
         waitFor(ExpectedConditions.visibilityOf(titleProducts));
         return titleProducts.isEnabled();
+
     }
+
 
 
     public void clickOnProductImage(String productName) {
         WebElement productImage = getDriver().findElement(By.xpath("//android.widget.ImageView[@content-desc='" + productName + "']"));
         waitFor(ExpectedConditions.visibilityOf(productImage)).click();
+
     }
 
 }
